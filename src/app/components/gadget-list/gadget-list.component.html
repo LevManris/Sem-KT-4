@@ -1,0 +1,5 @@
+<section class="gadgets">
+    @for (gadget of gadgetsService.computedGadgets(); track gadget.id) {
+    <app-gadget-item [gadget]="gadget" />
+    }
+</section>

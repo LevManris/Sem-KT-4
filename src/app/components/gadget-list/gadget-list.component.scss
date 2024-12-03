@@ -1,0 +1,7 @@
+.gadgets {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 1048px;
+    margin: 0 auto;
+    gap: 50px;
+}

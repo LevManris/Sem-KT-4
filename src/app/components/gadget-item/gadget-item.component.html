@@ -1,0 +1,13 @@
+<div class="card">
+    <!-- {{ gadget | json }} -->
+    <img [src]="gadget.thumbnail" class="image" alt="">
+    <p class="card block">Title: {{ gadget.title }}</p>
+    <p class="card block">Category: {{ gadget.category }}</p>
+    <p class="card block">Price: {{ gadget.price | currency: '': '$' : '0.0-0' }}</p>
+    <div class="block stars">
+        @for (star of stars; track $index) {
+        <!-- {{$index+1}} -->
+        <img [src]="$index+1 > getRoundedRate() ? '/assets/star-unactive.svg' : '/assets/star-active.svg'" alt="">
+        }
+    </div>
+</div>
